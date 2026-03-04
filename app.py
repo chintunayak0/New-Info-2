@@ -211,7 +211,7 @@ def get_player_stat():
             "message": "An unexpected error occurred while processing your request"
         }), 500
 
-@app.route('/get_player_personal_show', methods=['GET'])
+@app.route('/accinfo', methods=['GET'])
 def get_account_info():
     try:
         # Get parameters with defaults
@@ -373,4 +373,5 @@ def get_account_info():
 
 
 if __name__ == '__main__':
+
     app.run(debug=True, host='0.0.0.0', port=5000)
