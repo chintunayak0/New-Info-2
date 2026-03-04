@@ -18,7 +18,7 @@ CORS(app)
 
 
 
-@app.route('/get_search_account_by_keyword', methods=['GET'])
+@app.route('/search', methods=['GET'])
 def get_search_account_by_keyword():
     try:
         # Get request parameters
@@ -375,3 +375,4 @@ def get_account_info():
 if __name__ == '__main__':
 
     app.run(debug=True, host='0.0.0.0', port=5000)
+
